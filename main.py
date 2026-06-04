@@ -5,3 +5,7 @@ app = FastAPI()
 @app.get("/hello")
 def hola_mundo():
     return {"message":"Hola Equipo"}
+
+@app.get("/")
+def root_endpoint():
+    return {"message": "Bienvenido a mi API"}
